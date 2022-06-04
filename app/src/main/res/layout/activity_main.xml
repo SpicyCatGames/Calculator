@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calcText"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#B8B8B8"
+        android:gravity="end|center_vertical"
+        android:paddingRight="64dp"
+        android:text="00000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit_button_1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedOne"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedTwo"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedThree"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_clear"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedClear"
+            android:text="AC"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit_button_4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedFour"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_5"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedFive"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_6"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedSix"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_plus"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedPlus"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit_button_7"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedSeven"
+            android:text="7"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_8"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedEight"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_9"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedNine"
+            android:text="9"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_minus"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedMinus"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit_button_0"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="clickedZero"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_multiply"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedMultiply"
+            android:text="*"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_divide"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedDivide"
+            android:text="/"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/digit_button_equal"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:onClick="clickedEqual"
+            android:text="="
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
